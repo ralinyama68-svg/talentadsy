@@ -1,0 +1,20 @@
+RUANG TALENT ADSY — VERCEL + SUPABASE
+
+INI PAKET BARU. Gunakan ZIP ini untuk GitHub dan Vercel.
+Tidak perlu memakai paket Sites/Cloudflare sebelumnya.
+
+1. Buat project Supabase.
+2. Jalankan supabase/setup.sql melalui SQL Editor.
+3. Buat akun SPV di Supabase Authentication > Users (email confirmed).
+4. Upload seluruh isi folder ini ke repository GitHub Private.
+5. Import repository tersebut di Vercel, Framework: Other.
+6. Isi SUPABASE_URL, SUPABASE_ANON_KEY, SUPABASE_SERVICE_ROLE_KEY, SPV_EMAIL.
+7. Deploy, lalu lakukan pengisian percobaan dan cek hasil melalui /spv.
+
+Password SPV lama dari Sites tidak berlaku. Gunakan akun Supabase Auth baru.
+Jangan upload kunci rahasia atau .env.local ke GitHub.
+Petunjuk lengkap: README.md.
+
+STATUS: build dan 7 pengujian otomatis lulus dengan mock API Supabase.
+Project Supabase, SQL, dan deployment Vercel milikmu masih perlu dikonfigurasi
+serta diperiksa dengan pengisian percobaan sebelum dibagikan ke tim.
