@@ -1,1 +1,72 @@
-{"$schema":"https://openapi.vercel.sh/vercel.json","framework":null,"buildCommand":"npm run build","outputDirectory":"public","rewrites":[{"source":"/tes","destination":"/index.html"},{"source":"/spv","destination":"/index.html"},{"source":"/selesai","destination":"/index.html"},{"source":"/api/:path+","destination":"/api?route=:path+"}],"headers":[{"source":"/(.*)","headers":[{"key":"X-Content-Type-Options","value":"nosniff"},{"key":"Referrer-Policy","value":"same-origin"},{"key":"Content-Security-Policy","value":"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"}]},{"source":"/app.js","headers":[{"key":"Cache-Control","value":"no-cache"}]}]}
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "npm run build",
+  "outputDirectory": "public",
+  "rewrites": [
+    {
+      "source": "/tes",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/spv",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/selesai",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/api/questions",
+      "destination": "/api?route=questions"
+    },
+    {
+      "source": "/api/login",
+      "destination": "/api?route=login"
+    },
+    {
+      "source": "/api/logout",
+      "destination": "/api?route=logout"
+    },
+    {
+      "source": "/api/submit",
+      "destination": "/api?route=submit"
+    },
+    {
+      "source": "/api/results",
+      "destination": "/api?route=results"
+    },
+    {
+      "source": "/api/note",
+      "destination": "/api?route=note"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "same-origin"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
+        }
+      ]
+    },
+    {
+      "source": "/app.js",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache"
+        }
+      ]
+    }
+  ]
+}
